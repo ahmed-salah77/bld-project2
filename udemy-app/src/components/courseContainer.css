@@ -1,0 +1,7 @@
+.course-container{
+    margin-top: 40px;
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
