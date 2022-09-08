@@ -8,4 +8,5 @@
 .collector{
     border: 1px solid #d1d7dc;
     padding: 3.2rem;
+    max-width: 100%;
 }
