@@ -1,0 +1,70 @@
+{
+  "course" : [
+    {
+      "_class": "course",
+      "id": 0,
+      "title": "Python Bootcamp: Vom Anfänger zum Profi, inkl. Data Science",
+      "url": "/course/python-bootcamp/",
+      "is_paid": false,
+      "price": "E£0",
+      "instructors":"Jannis Seemann",
+      "image": "https://img-c.udemycdn.com/course/480x270/1307308_12d0.jpg",
+      "rating" :4.3,
+      "reviews" :142563,
+      "bestSeller":false
+
+    },
+    {
+      "_class": "course",
+      "id": 1,
+      "title": "Python 3 od Podstaw do Eksperta",
+      "url": "/course/python-od-podstaw-dla-poczatkujacych/",
+      "is_paid": true,
+      "price": "E£1,199.99",
+      "instructors": "Arkadiusz Włodarczyk",
+      "image": "https://img-c.udemycdn.com/course/480x270/1450560_cfd3_2.jpg",
+      "rating" :3.5,
+      "reviews" :42344,
+      "bestSeller":true
+    },
+    {
+      "_class": "course",
+      "id": 2,
+      "title": "(50 Saat) Python A-Z™: Veri Bilimi ve Machine Learning",
+      "url": "/course/python-egitimi/",
+      "is_paid": true,
+      "price": "E£319.99",
+      "instructors": "Mustafa Vahit Keskin",
+      "image": "https://img-c.udemycdn.com/course/480x270/2310884_04cd_6.jpg",
+      "rating":3,
+      "reviews":142452,
+      "bestSeller":true
+    },
+    {
+      "_class": "course",
+      "id": 3,
+      "title": "Python TOTAL - Programador Avanzado en 16 días",
+      "url": "/course/python-total/",
+      "is_paid": true,
+      "price": "E£229.99",
+      "instructors": "Federico Garay",
+      "image": "https://img-c.udemycdn.com/course/480x270/4189168_9704_3.jpg",
+      "rating":5,
+      "reviews":1424252,
+      "bestSeller":false
+    },
+    {
+      "_class": "course",
+      "id": 4,
+      "title": "Python ile Sifirdan Ileri Seviye Programlama 2022",
+      "url": "/course/python-programlama-kursu-2020-levent-ertunalilar/",
+      "is_paid": true,
+      "price": "E£1,199.99",
+      "instructors": "Levent Ertunalilar",
+      "image": "https://img-c.udemycdn.com/course/480x270/3124082_134b_9.jpg",
+      "rating":2.5,
+      "reviews":14425224,
+      "bestSeller":true
+    }
+  ]
+}
