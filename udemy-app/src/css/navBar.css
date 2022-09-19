@@ -1,0 +1,179 @@
+.navbar {
+    z-index: 99999;
+    position: relative;
+    height: 70px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    display: flex;
+    padding: 5px ;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar div {
+    margin: 0px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.srbox {
+    position: relative;
+    height: 2.9rem;
+    background-color: #F7F9FA;
+    border: 1px solid #1c1d1f;
+    border-radius: 99999px;
+    text-align: left;
+    padding-left: 44px;
+}
+.sr {
+    display: flex;
+    flex-grow: 1;
+}
+.search-icon{
+    position: absolute;
+    font-size: 19px;
+    left: 240px;
+    top:25px;
+}
+
+.home img {
+    width: 91px;
+}
+
+.lang {
+    width: 18px;
+}
+
+.cart {
+    font-size: 22px;
+}
+
+.sr button img {
+    width: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navbar button:hover {
+    cursor: pointer;
+    color: blueviolet;
+}
+.navbar div button {
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    border: none;
+}
+.srbtn {
+    position: absolute;
+    width: 25px;
+    left: 237px;
+    top: 30px;
+}
+
+.navbar div button a:hover {
+    cursor: pointer;
+    color: blueviolet;
+}
+
+.login {
+    border: 1px solid black;
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.login a {
+    text-decoration: none;
+    color: #1c1d1f;
+    font-weight: 700;
+
+}
+
+.login:hover {
+    background-color: #f7f9fa;
+}
+
+.signup {
+    background-color: #1c1d1f;
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.signup a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.signin:hover {
+    background-color: black;
+}
+
+.langbtn {
+    border: 1px solid black;
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.langbtn:hover {
+    background-color: #f7f9fa;
+}
+
+.mininav {
+    display: none;
+    align-items: left;
+    justify-content: left;
+}
+
+.toggle img {
+    width: 40px;
+}
+
+.minihome img {
+    width: 100px;
+}
+
+.mininav button {
+    border: none;
+}
+
+.minihome {
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 1100px) {
+    div.bsns {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    div.teach {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar {
+        display: none;
+    }
+    .mininav {
+        display: flex;
+    }
+}

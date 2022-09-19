@@ -1,0 +1,24 @@
+
+.course-type {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    line-height: 1.4;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.tab-btn{
+    background-color: inherit;
+    border: none;
+    color: #6a6f73;
+    font-weight: 700;
+}
+.tab-btn:hover{
+    color: black;
+}
+.selected{
+    font-size: 105%;
+    color: rgb(0, 0, 0);
+}

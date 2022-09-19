@@ -1,0 +1,16 @@
+.cards-container-1{
+    width: 1140px;
+}
+.cards-container-2{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.top-categories-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}

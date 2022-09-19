@@ -1,0 +1,68 @@
+.chapter{
+    padding-left: 30px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    border: 1px solid #d1d7dc;
+    background-color: #F7F9FA;
+    display: flex;
+}
+.chapter:hover{
+    cursor: pointer;
+}
+.toggle-icon{
+    height: max-content;
+    margin-right: 15px;
+}
+.chapter-title{
+    user-select: none;
+    font-family: sans-serif;
+    letter-spacing: -.02rem;
+    font-weight: 700;
+    width: 450px;
+    margin-right: 60px;
+}
+.chapter-info{
+    font-family: sans-serif;
+    color: #454648;
+    font-size: 0.9rem;
+    letter-spacing: -0.03rem;
+}
+.lectures-container{
+    width: 700px;
+    border: 1px solid #d1d7dc;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: none;
+    display: none;
+}
+.lectures-container li{
+   margin-top: 10px;
+   display: flex;
+}
+.play-icon{
+    margin-right: 10px;
+    color: black;
+}
+.canPlay .lec-title{
+    color: #5624d0;
+    text-decoration: underline;
+}
+.canPlay .preview-lec{
+    color: #5624d0;
+    text-decoration: underline;
+}
+.lec-duration{
+    margin-left: 23px;
+    color: #8c8d8f;
+    text-decoration: dashed;
+}
+.canPlay:hover{
+    cursor: pointer;
+}
+.lec-title{
+    width: 490px;
+}
+.preview-lec{
+    width: 52px;
+}

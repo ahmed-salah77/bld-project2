@@ -1,0 +1,44 @@
+{
+    "category_cards":[
+        {
+            "id":0,
+            "name":"Business",
+            "image":"images/lohp-category-business-v2.jpg"
+        },
+        {
+            "id":1,
+            "name":"Design",
+            "image":"images/lohp-category-design-v2.jpg"
+        },
+        {
+            "id":2,
+            "name":"Development",
+            "image":"images/lohp-category-development-v2.jpg"
+        },
+        {
+            "id":3,
+            "name":"IT and Software",
+            "image":"images/lohp-category-it-and-software-v2.jpg"
+        },
+        {
+            "id":4,
+            "name":"Marketing",
+            "image":"images/lohp-category-marketing-v2.jpg"
+        },
+        {
+            "id":5,
+            "name":"Music",
+            "image":"images/lohp-category-music-v2.jpg"
+        },
+        {
+            "id":6,
+            "name":"Personal Development",
+            "image":"images/lohp-category-personal-development-v2.jpg"
+        },
+        {
+            "id":7,
+            "name":"Photography",
+            "image":"images/lohp-category-photography-v2.jpg"
+        }
+    ]
+}
