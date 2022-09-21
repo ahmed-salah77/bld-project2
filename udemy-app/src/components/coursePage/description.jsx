@@ -1,8 +1,7 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import '../../css/description.css'
-import { CourseData } from '../../App';
 const Description = (props) => {
-    const course = useContext(CourseData).singleCourse;
+    const course = props.course;
     const descriptionContent = course.description;
     const showMore = ()=>{
         // increase height of the container
@@ -35,8 +34,8 @@ const Description = (props) => {
                 
             </div>
     
-            <button className='show-more show-more-btn' onClick={showMore}>Show more <i class="fa-solid fa-chevron-down mx-1 fa-xs"></i></button>
-            <button className='show-less show-less-btn' onClick={showLess}>Show less <i class="fa-solid fa-chevron-up mx-1 fa-xs"></i></button>
+            <button className='show-more show-more-btn' onClick={showMore}>Show more <i className="fa-solid fa-chevron-down mx-1 fa-xs"></i></button>
+            <button className='show-less show-less-btn' onClick={showLess}>Show less <i className="fa-solid fa-chevron-up mx-1 fa-xs"></i></button>
         </div>
     );
 }

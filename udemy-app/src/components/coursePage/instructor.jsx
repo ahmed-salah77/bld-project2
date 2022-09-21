@@ -3,8 +3,6 @@ import '../../css/instructor.css';
 const Instructor = (props) => {
     const description = props.instructor.description;
     const idx =props.idx;
-    console.log(props.instructor.title);
-    console.log(idx);
     const showMore = ()=>{
         // increase height of the container
         const contentBox = document.querySelector('.instructor-description'+idx);
@@ -31,7 +29,7 @@ const Instructor = (props) => {
     }
     return (
         <div className='instructor-card'>
-            <a className='instructor-name'>{props.instructor.display_name}</a>
+            <a href='exampl.com' className='instructor-name'>{props.instructor.display_name}</a>
             <div className='instructor-job'>{props.instructor.job_title}</div>
             <div className='image-and-career'>
                 <img className = 'instructor-image'src={props.instructor.image_100x100} alt='instructor'/>
@@ -55,8 +53,8 @@ const Instructor = (props) => {
                 </div>
             </div>
             <div className={'instructor-description'+idx+' instructor-description'} dangerouslySetInnerHTML={{ __html: description}}></div>
-            <button className={'show-more-btn show-more'+idx} onClick={showMore}>Show more <i class="fa-solid fa-chevron-down mx-1 fa-xs"></i></button>
-            <button className={'show-less-btn show-less'+idx} onClick={showLess}>Show less <i class="fa-solid fa-chevron-up mx-1 fa-xs"></i></button>
+            <button className={'show-more-btn show-more'+idx} onClick={showMore}>Show more <i className="fa-solid fa-chevron-down mx-1 fa-xs"></i></button>
+            <button className={'show-less-btn show-less'+idx} onClick={showLess}>Show less <i className="fa-solid fa-chevron-up mx-1 fa-xs"></i></button>
         </div>
     );
 }

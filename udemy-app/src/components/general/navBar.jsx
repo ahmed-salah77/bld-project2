@@ -1,8 +1,7 @@
-import {React,useState,useContext} from 'react'
+import {React,useState} from 'react'
 import "../../css/navBar.css";
-import {CourseData} from '../../App'
-function NavBar(){
-    const setSearchText =  useContext(CourseData).setSearchText;
+function NavBar(props){
+    const setSearchText = props.setSearchText;
     const [text, setText] = useState("");
     const handleChange = (event)=>{
          setText(event.target.value);

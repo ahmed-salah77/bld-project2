@@ -1,15 +1,13 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import '../../css/studentFeedback.css';
-import {CourseData} from '../../App';
 import Stars from '../general/stars';
 const StudentFeedback = (props) => {
-    const course = useContext(CourseData).singleCourse;
+    const course = props.course;
     const rateFrequency=[course.rating_distribution[0].count,
                         course.rating_distribution[1].count,
                         course.rating_distribution[2].count,
                         course.rating_distribution[3].count,
                         course.rating_distribution[4].count];
-    console.log(rateFrequency);
     const getBars=()=>{
         let totalSum = rateFrequency.reduce((a, b) => a + b, 0);
         let _html=``;
@@ -40,7 +38,7 @@ const StudentFeedback = (props) => {
             <div className='rate-and-rate-distribution d-flex'>
                 <div className='rating-container'>
                     <div className='rate big-rate'>{course.avg_rating.toFixed(1)}</div>
-                    <div className='feedback-stars'><Stars rate={course.avg_rating}/></div>
+                    <div className='feedback-stars'><Stars rate={parseFloat(course.avg_rating.toFixed(1))}/></div>
                     <div className='rate'>course rating</div>
                 </div>
                 <div className='rate-bars-container' dangerouslySetInnerHTML={{__html:getBars()}}>

@@ -2,7 +2,6 @@ import React from 'react';
 import '../../css/ccCaption.css';
 const CcCaption = (props) => {
     let _html =`<div class='toBottom d-none w-0'></div><span class="cc-icon fa-solid fa-closed-captioning"></span> <span>${props.ccLang[0]}</span>`;
-    console.log(props.ccLang);
     for (let i = 1; i < props.ccLang.length; i++) {
         const element = props.ccLang[i];
         if(i < 2){
@@ -21,7 +20,6 @@ const CcCaption = (props) => {
         const toBottom = document.querySelector('.toBottom');
         toBottom.classList.remove('d-none');
     }
-    console.log(_html);
     return (
         <span>
         <span dangerouslySetInnerHTML={{__html:_html}}>

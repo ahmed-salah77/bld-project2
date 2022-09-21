@@ -1,3 +1,4 @@
+
 import Course from "./course";
 import "../../css/courseContainer.css";
 import React, {useContext} from 'react';

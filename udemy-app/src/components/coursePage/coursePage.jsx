@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import {React,useContext,} from 'react';
 import CourseContentContainer from './courseContentContainer';
 import NavBar from '../general/navBar';
 import TopContent from './topContent';
@@ -9,20 +9,25 @@ import InstructorsContainer from './instructorsContainer';
 import StudentFeedback from './studentFeedback';
 import Footer from '../general/footer';
 import '../../css/coursePage.css';
-const CoursePage = () => {
+import SideBar from './sideBar';
+import { CourseData } from '../../App';
+const CoursePage = (props) => {
+    const course = useContext(CourseData).singleCourse;
+    const courseContent = useContext(CourseData).courseContent;
     return (
         <div>
             <NavBar />
-            <TopContent />
+            <TopContent course={course}/>
             <div className='main-content'>
                 <div className='sub-content'>
-                    <WhatYouLearn />
-                    <CourseContentContainer />
-                    <Requirements />
-                    <Description />
-                    <InstructorsContainer />
-                    <StudentFeedback />
+                    <WhatYouLearn course = {course}/>
+                    <CourseContentContainer courseContent = {courseContent}/>
+                    <Requirements course = {course}/>
+                    <Description course = {course}/>
+                    <InstructorsContainer course = {course}/>
+                    <StudentFeedback course = {course}/>
                 </div>
+                <SideBar course={course}/>
             </div>
             <Footer />
         </div>

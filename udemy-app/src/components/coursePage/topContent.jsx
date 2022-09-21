@@ -1,19 +1,20 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import '../../css/topContent.css';
 import Stars from '../general/stars'
 import InstructorsNames from '../general/instructorsNames'
-import {CourseData} from '../../App';
 import CcCaption from '../general/ccCaption';
+
 const TopContent = (props) => {
-    const course = useContext(CourseData).singleCourse;
-    const date = new Date(course.last_update_date);
+    const course = props.course;
+    const date = new Date(course.last_update_date ? course.last_update_date:'');
+    console.log(course);
     return (
         <div className='top-content dark-background'>
             <div className='outer-contianer'>
                 <div className='about-course'>
                     <div className='category-path'>
                         <span className='_category-title'>{course.primary_category.title}</span>
-                        <span class="arrow fa-solid fa-chevron-right"></span>
+                        <span className="arrow fa-solid fa-chevron-right"></span>
                         <span className='_category-title'>{course.primary_subcategory.title}</span>
                     </div>
                     <div className='big-course-title'>

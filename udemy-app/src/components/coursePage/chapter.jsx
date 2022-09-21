@@ -1,10 +1,31 @@
 import React from 'react';
 import '../../css/chapter.css'
 
-const Chapter = () => {
+const Chapter = (props) => {
+    const section = props.section;
+    const idx=props.idx;
+    let num_lectures =0;
+    section.forEach(element => {
+        if(element._class === 'lecture')
+            num_lectures++;
+    });
+    let _html = ``;
+    for (let i = 1; i < section.length; i++) {
+        const element = section[i];
+        _html+=
+        `<li key = '${element.id}' class='lecture ${element.can_be_previewed ? 'canPlay':''}'>
+            ${element.asset  && element.asset.asset_type === 'Video' ? `<i class="fa-solid fa-circle-play play-icon"></i>`:''}
+            ${element.asset  && element.asset.asset_type === 'Article' ? `<i class="fa-regular fa-file play-icon"></i>`:''}
+            ${!element.asset  ? `<i class="fa-regular fa-circle-question play-icon"></i>`:''}
+            <div class='lec-title'>${element.title}</div>
+            <span style="flex: 1 1 0%;"></span>
+            ${element.can_be_previewed ? `<div class='preview-lec'>Preview</div>`:''}
+            <div class='lec-duration'>${element.content_summary}</div>
+        </li>`;
+    }
     const flip = ()=>{
-        const lec = document.querySelector('#lec-1');
-        const icon = document.querySelector('.toggle-icon');
+        const lec = document.querySelector('#lec-'+idx);
+        const icon = document.querySelector('#toggle-icon-'+idx);
         let toDisplay = 'block';
         if(lec.style.getPropertyValue('display') === 'block'){
             toDisplay = 'none';
@@ -15,56 +36,16 @@ const Chapter = () => {
         }
         lec.style.setProperty('display',toDisplay);
     };
+    const display = (idx >= 10 ? 'extra-section d-none':'');
     return (
-        <div>
+        <div className={'section '+display}>
             <div className='chapter' onClick={flip}>
-                <div className="fa-solid fa-caret-down toggle-icon"></div>
-                <div className='chapter-title'>Python Fundamentals: Day 1 - Intro, IDEs and dealing with mistakes</div>
-                <div className='chapter-info'>7 lectures • 46 min</div>
+                <div id ={"toggle-icon-"+idx} className={"fa-solid fa-caret-down toggle-icon"}></div>
+                <div className='chapter-title'>{section[0].title}</div>
+                <div className='chapter-info'>{num_lectures} lectures • 46 min</div>
             </div>
-            <ul id = 'lec-1'className='lectures-container'>
-                <li className='lecture canPlay'>
-                    <i className="fa-solid fa-circle-play play-icon"></i>
-                     <div className='lec-title'>Introduction</div>
-                     <div className='preview-lec'>Preview</div>
-                     <div className='lec-duration'>00:29</div>
-                </li>
-                <li className='lecture canPlay'>
-                    <i className="fa-solid fa-circle-play play-icon"></i>
-                        <div className='lec-title'>Introduction</div>
-                     <div className='preview-lec'>Preview</div>
-                     <div className='lec-duration'>05:07</div>
-                </li>
-                <li className='lecture canPlay'>
-                    <i className="fa-solid fa-circle-play play-icon"></i>
-                    <div className='lec-title'>Installing Python</div>
-                     <div className='preview-lec'>Preview</div>
-                     <div className='lec-duration'>07:26</div>
-                     </li>
-                <li className='lecture canPlay'>
-                    <i className="fa-solid fa-circle-play play-icon"></i>
-                     <div className='lec-title'>Integrated Development Environments vs Text Editors</div>
-                     <div className='preview-lec'>Preview</div>
-                     <div className='lec-duration'>10:38</div>
-                </li>
-                <li className='lecture'>
-                    <i className="fa-solid fa-circle-play play-icon"></i>
-                     <div className='lec-title'>How to deal with errors</div>
-                     <div className='preview-lec'></div>
-                     <div className='lec-duration'>10:20</div>
-                </li>
-                <li className='lecture'>
-                    <i className="fa-solid fa-circle-play play-icon"></i> 
-                    <div className='lec-title'>Finding and fixing errors</div>
-                     <div className='preview-lec'></div>
-                     <div className='lec-duration'>06:10</div>
-                </li>
-                <li className='lecture'>
-                    <i className="fa-solid fa-circle-play play-icon"></i>
-                    <div className='lec-title'>Finding errors challenge walkthrough</div>
-                     <div className='preview-lec'></div>
-                     <div className='lec-duration'>05:47</div>
-                </li>
+            <ul id = {'lec-'+idx} className='lectures-container ' dangerouslySetInnerHTML={{__html:_html}}>
+                
             </ul>
         </div>
     );

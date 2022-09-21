@@ -1,8 +1,7 @@
-import React,{useContext} from 'react';
-import { CourseData } from '../../App';
+import React from 'react';
 import '../../css/whatYouLearn.css'
 const WhatYouLearn = (props) => {
-    const obj = useContext(CourseData).singleCourse.what_you_will_learn_data.items;
+    const obj = props.course.what_you_will_learn_data.items;
     let _html = ``;
     obj.forEach(element => {
         _html+=

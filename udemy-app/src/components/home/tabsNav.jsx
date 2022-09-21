@@ -1,10 +1,11 @@
+
 import React from "react";
 import '../../css/tabsNav.css';
 import bannerData from '../../bannerData.json'
 import {useState,useContext} from 'react';
 import {CourseData} from '../../App'
 
-function TabsNav(props){
+const TabsNav = (props) => {
     const setSearchText =  useContext(CourseData).setSearchText;
     const [lastSelected,setLastSelected] = useState(0);
     const update = (event)=>{

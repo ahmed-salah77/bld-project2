@@ -56,13 +56,14 @@
     margin-left: 23px;
     color: #8c8d8f;
     text-decoration: dashed;
+    padding-right: 20px;
 }
 .canPlay:hover{
     cursor: pointer;
 }
-.lec-title{
-    width: 490px;
+.lecture{
+    font-size: 0.9rem;
 }
-.preview-lec{
-    width: 52px;
+.lec-title{
+    width: 400px;
 }

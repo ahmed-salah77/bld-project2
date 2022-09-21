@@ -1,8 +1,7 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import '../../css/requirements.css'
-import { CourseData } from '../../App';
 const Requirements = (props) => {
-    const course = useContext(CourseData).singleCourse;
+    const course = props.course;
     const reqq = course.requirements_data.items;
     let _html =``;
     for (let i = 0; i < reqq.length; i++) {

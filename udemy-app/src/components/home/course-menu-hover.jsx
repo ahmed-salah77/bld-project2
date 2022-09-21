@@ -7,7 +7,7 @@ const CourseMenuHover = (props) => {
     const date = new Date(props.course.last_update_date);
     const objectives = props.course.objectives_summary?.map((element) =>{
         return (
-        <li>
+        <li key={element}>
             <span className="check-icon"><i className='fa-solid fa-check '></i></span>
             <span>{element}</span>
         </li>

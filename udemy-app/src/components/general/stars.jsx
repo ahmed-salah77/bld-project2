@@ -6,7 +6,7 @@ const Stars = (props) => {
   const half = `<span class='fa fa-star-half-o'></span>`;
   const empty = `<span class='fa fa-star-o'></span>`;
   const rate = props.rate;
-  var cnt = Math.floor(rate);
+  var cnt = Math.floor(rate+0.00001);
   for (var j = 0; j < cnt; ++j) {
     stars += full;
   }
