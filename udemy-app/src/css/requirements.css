@@ -1,0 +1,21 @@
+.requirements-container{
+    width: 700px;
+    margin-top: 30px;
+}
+.req-word{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.req-items{
+    margin-top: 20px;
+    font-size: 0.9rem;
+    padding-left: 24px;
+}
+.req-items li{
+    padding-bottom: 8px;
+}
+.req-items li::marker{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+

@@ -6,20 +6,22 @@ a{
 a:hover{
     text-decoration: none;
 }
-.card{
-    width: 200px;
-    height: 250px;
+.my-card{
+    position: relative;
+    width: 232px;
     max-width: 100%;
-    border: none;
-    margin-right: 10px;
+}
+.course-card{
+    width: 100%;
+    max-width: 100%;
 }
 .course-title{
     color: black;
     font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2;
     letter-spacing: -.02rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: block !important;
     display: -webkit-box !important;
     -webkit-line-clamp: 2;
@@ -27,15 +29,13 @@ a:hover{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-}
-
-figcaption {
-    margin-top: 3px;
+    height: 40px;
 }
 
 .course-img {
     width: 100%;
-    position: relative;
+    border: 1px solid #d1d7dc;
+    margin-bottom: 8px;
 }
 
 .creator {
@@ -43,47 +43,62 @@ figcaption {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 0.55rem;
-    font-weight: 555;
-    margin-bottom: -7px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
 }
-
+.course-card-stars{
+    font-size: 0.7rem;
+    color: #f0ad42;
+}
 .rate {
-    font-size: x-small;
-    font-weight: 500;
-    margin-right: 4px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-right: 5px;
     color: #B4690E;
 }
-.star{
-    font-size: x-small;
-    margin: 0.5px;
-}
+
 .price{
     color: black;
-    font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
-    font-weight: 600;
-    letter-spacing: -.03rem;
-    font-size: 0.85rem;
-    margin-top: -2px;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: -0.02rem;
 }
 
 .cnt {
-    font-size: x-small;
+    margin-left: 2px;
+    font-size:0.8rem;
     color: #83869C;
 }
 .best-seller{
     background-color: #eceb98;
     margin-top: 10px;
-    padding: 1px  6px;
+    padding: 3px  10px;
     color: #3d3c0a;
     border: 1px;
     font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
     font-weight: 600;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     width: max-content;
 }
-.course-img:hover {
+.my-card:hover .course-img{
     filter: contrast(70%);
-    transition: 0.5s;
+}
+.my-card:hover{
+    cursor: pointer;
+}
+.course-pop-up{
+    padding-left: 10px;
+    display: none;
+}
+.my-card:hover .course-pop-up{
+    cursor:auto;
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: -60px;
+}
 
+.course-pop-up{
+    z-index: 9999;
 }

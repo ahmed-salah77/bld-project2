@@ -1,0 +1,46 @@
+.student-feedback-container{
+    width: 700px;
+    max-width: 100%;
+}
+.big-rate{
+    font-size: 4rem;
+    line-height: 55px;
+}
+.rate-and-rate-distribution{
+    padding-top: 20px;
+}
+.feedback-stars span span{
+    padding-top: 10px;
+    color: #e59819;
+}
+.rate-bars-container{
+    padding-left: 40px;
+    padding-top: 5px;
+}
+.bar{
+    width: 400px;
+    background-color: #D1D7DC;
+    height: 8px;
+}
+.rate-bar{
+    padding-bottom: 15px;
+}
+.filled-part{
+    height: 100%;
+    background-color: #6A6F73;
+}
+.right-stars{
+    height: 150px;
+   color: #e59819;
+   padding-left: 10px;
+   font-size: 0.9rem;
+}
+.precent-num{
+    padding-left: 5px;
+    font-size: 0.7rem;
+    padding-bottom: 4px;
+    padding-top: 1.5px;
+    text-decoration: underline;
+    color: #B29BEA;
+    cursor: pointer;
+}

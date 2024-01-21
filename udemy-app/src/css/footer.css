@@ -1,0 +1,68 @@
+.links-and-lang-container{
+    display: flex;
+    padding: 20px 10px;
+    gap: 120px;
+}
+.links-and-lang-container ul{
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: -0.05rem;
+    font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+.links-and-lang-container ul li{
+    padding: 1px 0px;
+}
+.lang-btn{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    padding-right: 25px;
+    padding-left: 20px;
+}
+.lang-btn:hover{
+    background-color: #2E2F31;
+}
+.language-selector-container{
+    position: absolute;
+    right: 50px;
+}
+._footer{
+    color: white;
+}
+.footer-container{
+    background-color:#1c1d1f;
+    height: 260px
+;
+    width: 100%;
+}
+._footer a{
+    color: white;
+}
+._footer a:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.unstyled-list{
+    list-style: none;
+}
+.logo-and-copyright{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 40px;
+}
+.udemy-logo{
+    width: 80px;
+
+}
+.copy-right-txt{
+    position: absolute;
+    font-size: 0.7rem;
+    right: 50px;
+}

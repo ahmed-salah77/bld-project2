@@ -1,0 +1,38 @@
+.description-container{
+    width: 700px;
+    margin-top: 10px;
+}
+
+.des-word{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.description-content{
+    font-size: 0.85rem;
+    height: 240px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(#fff,#fff,rgba(255,255,255,0));
+}
+.description-content ul li{
+    padding-bottom: 0px;
+    line-height: 0.9rem;
+}
+.show-more-btn{
+    background-color: inherit;
+    border: none;
+    color: #5624d0;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+    display: block;
+}
+.show-less-btn{
+    background-color: inherit;
+    border: none;
+    color: #5624d0;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+    display: none;
+}

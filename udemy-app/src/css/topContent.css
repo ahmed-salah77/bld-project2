@@ -1,0 +1,123 @@
+.top-content{
+    width: 100%;
+    background-color: #1c1d1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outer-contianer{
+    width: 1090px;
+    height: 100%;
+}
+.about-course{
+    height: 100%;
+    width: 700px;
+    padding-bottom: 30px;
+}
+._category-title{
+    color: #cec0fc;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 0.95rem;
+    padding-bottom: 10px;
+}
+._category-title:hover{
+    cursor: pointer;
+}
+.arrow{
+    color: white;
+    font-size: 0.5rem;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.category-path{
+    padding-top: 20px;
+}
+.big-course-title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-top: 15px;
+}
+.course-headline{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.rate-and-students{
+    padding-top: 15px;
+}
+._rate{
+    color: #f3ca8c;
+    font-weight: 700;
+    padding-left: 8px;
+    font-size: 95%;
+}
+.top-content-stars span span{
+    padding: 0px 1px;
+}
+.top-content-stars{
+    color: #f3ca8c;
+    font-size: 0.7rem;
+    padding-left: 2px;
+    height: 20px;
+}
+.rating-num{
+    color:#cec0fc;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    padding-left: 8px;
+}  
+.rating-num:hover{
+    cursor: pointer;
+} 
+.students-num{
+    color: white;
+    font-size: 0.9rem;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.created-by{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-top: 8px;
+}
+.creator-name{
+    color:#cec0fc;
+    font-size: 0.9rem;
+    padding-left: 10px;
+    text-decoration: underline;
+    user-select: none;
+}
+.creator-name:hover{
+    cursor: pointer;
+}
+
+.last-update-and-language{
+    padding-top: 8px;
+    color: white;
+    font-size: 0.9rem;
+}
+.last-update-date{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.course-language{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.cc-icon{
+    padding-right: 10px;
+}
+.more-cc{
+    background-color: inherit;
+    text-decoration: underline;
+    border: none;
+    color: white;
+    padding: 0px;
+    cursor: pointer;
+}

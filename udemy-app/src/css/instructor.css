@@ -1,0 +1,62 @@
+.instructor-card{
+    padding: 20px 0px;
+}
+.instructor-name{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #5624d0;
+    border-bottom: 1px solid #5624d0;
+    padding-bottom: -2px;
+    cursor: pointer;
+}
+.instructor-job{
+    color: #6a6f73;
+}
+.image-and-career{
+    padding-top: 10px;
+    display: flex;
+}
+.instructor-image{
+    border-radius: 99999px;
+    width: 112px;
+    height: 112px;
+}
+.instructor-stats{
+    padding-left: 15px;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+.stat-text{
+    padding-left: 15px;
+}
+.stat-icon{
+    width: 15px;
+}
+.stat{
+    padding-bottom: 5px;
+}
+.instructor-description{
+    padding-top: 20px;
+    font-size: 0.85rem;
+    height: 185px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(#fff,#fff,rgba(255,255,255,0));
+}
+.show-more-btn{
+    background-color: inherit;
+    border: none;
+    color: #5624d0;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+    display: block;
+}
+.show-less-btn{
+    background-color: inherit;
+    border: none;
+    color: #5624d0;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+    display: none;
+}

@@ -1,0 +1,8 @@
+.instructors-container{
+    width: 700px;
+    padding-top: 40px;
+}
+.instructor-word{
+    font-size: 1.5rem;
+    font-weight: 700;
+}

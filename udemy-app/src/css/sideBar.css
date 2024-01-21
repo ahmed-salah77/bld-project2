@@ -1,0 +1,157 @@
+.side-bar-container{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    border: 1px solid #d1d7dc;
+    width: 340px;
+    background-color: white;
+    margin-top: -300px;
+    height: max-content;
+}
+.preview-icon{
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    left: 40%;
+    top: 65px;
+    background-color: black;
+    border-radius: 9999px;
+}
+.preview-text{
+    position: absolute;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    left: 27%;
+    top: 150px;
+}
+.preview-course{
+    cursor: pointer;
+    position: relative;
+  
+}
+.preview-img{
+    width: 100%;
+    filter:brightness(70%);
+    position: relative;
+}
+.course-price-and-info  {
+    padding: 22px;
+}
+.discount-price{
+    color: black;
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+.original-price{
+    font-weight: 500;
+    padding: 10px;
+    padding-top: 15px;
+    color: #6a6f73;
+    text-decoration:line-through;
+}
+.discount-percent{
+    padding-top: 15px;
+    font-size: 1rem;
+}
+.time-left{
+    color: #b32d;
+}
+.add-to-cart-and-buy-container{
+    width: 100%;
+}
+.add-to-cart-container{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.add-to-cart-btn{
+    flex-grow: 1;
+    height: 48px;
+    border: none;
+    background-color: #a435f0;
+    color: white;
+    font-weight: 700;
+    user-select: none;
+}
+.add-to-cart-btn:hover{
+    background-color: #8710D8;
+}
+.add-to-wish-list-btn{
+    width: 50px;
+    margin-left: 10px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1.4rem;
+    user-select: none;
+
+}
+.add-to-wish-list-btn:hover{
+    background-color: #F5F5F5;
+}
+.buy-now-container{
+    width: 100%;
+    margin-top: 10px;
+}
+.buy-now-btn{
+    height: 48px;
+    width: 100%;
+    background-color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    user-select: none;
+
+}
+.buy-now-btn:hover{
+    background-color: #F5F5F5;
+}
+.day-money-back{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
+.course-includes{
+    padding-top: 20px;
+}
+.include-icon{
+    width: 30px;
+    margin-right: 4px;
+    padding-right: 10px;
+    text-align: center;
+}
+.include-item{
+    display: flex;
+    font-size: 0.9rem;
+    padding-top: 10px;
+}
+.option-text{
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+}
+.options-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    gap: 22px;
+    padding-top: 15px;
+}
+.try-btn{
+    width: 100%;
+    border: 1px solid black;
+    height: 38px;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.try-btn:hover{
+    background-color:#F5F5F5;
+}
+.udemy-business-container{
+    padding: 22px;
+    border-top: 1px solid #d1d7dc;
+    height: max-content;
+}
